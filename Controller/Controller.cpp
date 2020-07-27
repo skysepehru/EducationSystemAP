@@ -144,4 +144,20 @@ void Controller:: takeCourse(const std::string& studentID, const std::string& co
     if(inCourses(courseName)){
         findStudent(studentID).currentSemesterCourses.insert({courseName, 0});
     }
+    else
+    {
+        throw invalid_argument("The Course was not found!!");
+    }
+}
+void Controller:: dropCourse(const std::string &studentID, const std::string &courseName) {
+    if(inCourses(courseName)){
+        std::map<std::string,double>::iterator it;
+        Student student = findStudent(studentID);
+        it = student.currentSemesterCourses.find(courseName);
+        student.currentSemesterCourses.erase(it);
+    }
+    else
+    {
+        throw invalid_argument("The Course was not found!!");
+    }
 }

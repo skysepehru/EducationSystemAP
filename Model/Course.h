@@ -6,11 +6,14 @@
 
 class Course {
     friend class Controller;
-
     friend std::ostream& operator<<(std::ostream & output, const Course& course);
     friend std::istream& operator>>(std::istream & input, Course& course);
 private:
     std::string courseName;
+public:
+    const std::string &getCourseName() const;
+
+private:
     std::string profLastName;
     std::string semester;
     std::vector<std::string> preCourses;

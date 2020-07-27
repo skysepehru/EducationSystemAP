@@ -15,6 +15,8 @@ private:
     std::string studentId;
     std::vector<std::string> passedCourses;
     std::map<std::string, double> currentSemesterCourses;
+public:
+    const std::map<std::string, double> &getCurrentSemesterCourses() const;
 
 public:
     Student() : Person() {}   // must be private
@@ -25,7 +27,6 @@ public:
     std::string toString() const;
 
     void setPassedCourses(const std::vector<std::string> &passedCourses);
-
     void setCurrentSemesterCourses(const std::map<std::string, double> &currentSemesterCourses);
 
 };
