@@ -267,6 +267,25 @@ CMakeFiles\TA_19.dir\View\Menus\CommandsFromFileMenu.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\TA_19.dir\View\Menus\CommandsFromFileMenu.cpp.s /c "D:\University and Project and Stuff\AP\EducationSystem\View\Menus\CommandsFromFileMenu.cpp"
 <<
 
+CMakeFiles\TA_19.dir\Model\DoubleMajorStudent.cpp.obj: CMakeFiles\TA_19.dir\flags.make
+CMakeFiles\TA_19.dir\Model\DoubleMajorStudent.cpp.obj: ..\Model\DoubleMajorStudent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\University and Project and Stuff\AP\EducationSystem\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/TA_19.dir/Model/DoubleMajorStudent.cpp.obj"
+	C:\PROGRA~2\MICROS~1\2019\ENTERP~1\VC\Tools\MSVC\1420~1.275\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\TA_19.dir\Model\DoubleMajorStudent.cpp.obj /FdCMakeFiles\TA_19.dir\ /FS -c "D:\University and Project and Stuff\AP\EducationSystem\Model\DoubleMajorStudent.cpp"
+<<
+
+CMakeFiles\TA_19.dir\Model\DoubleMajorStudent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TA_19.dir/Model/DoubleMajorStudent.cpp.i"
+	C:\PROGRA~2\MICROS~1\2019\ENTERP~1\VC\Tools\MSVC\1420~1.275\bin\Hostx86\x86\cl.exe > CMakeFiles\TA_19.dir\Model\DoubleMajorStudent.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\University and Project and Stuff\AP\EducationSystem\Model\DoubleMajorStudent.cpp"
+<<
+
+CMakeFiles\TA_19.dir\Model\DoubleMajorStudent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TA_19.dir/Model/DoubleMajorStudent.cpp.s"
+	C:\PROGRA~2\MICROS~1\2019\ENTERP~1\VC\Tools\MSVC\1420~1.275\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\TA_19.dir\Model\DoubleMajorStudent.cpp.s /c "D:\University and Project and Stuff\AP\EducationSystem\Model\DoubleMajorStudent.cpp"
+<<
+
 # Object files for target TA_19
 TA_19_OBJECTS = \
 "CMakeFiles\TA_19.dir\main.cpp.obj" \
@@ -279,7 +298,8 @@ TA_19_OBJECTS = \
 "CMakeFiles\TA_19.dir\View\Menus\Menu.cpp.obj" \
 "CMakeFiles\TA_19.dir\View\Menus\InternalMenu.cpp.obj" \
 "CMakeFiles\TA_19.dir\View\Menus\LeafMenu.cpp.obj" \
-"CMakeFiles\TA_19.dir\View\Menus\CommandsFromFileMenu.cpp.obj"
+"CMakeFiles\TA_19.dir\View\Menus\CommandsFromFileMenu.cpp.obj" \
+"CMakeFiles\TA_19.dir\Model\DoubleMajorStudent.cpp.obj"
 
 # External object files for target TA_19
 TA_19_EXTERNAL_OBJECTS =
@@ -295,9 +315,10 @@ TA_19.exe: CMakeFiles\TA_19.dir\View\Menus\Menu.cpp.obj
 TA_19.exe: CMakeFiles\TA_19.dir\View\Menus\InternalMenu.cpp.obj
 TA_19.exe: CMakeFiles\TA_19.dir\View\Menus\LeafMenu.cpp.obj
 TA_19.exe: CMakeFiles\TA_19.dir\View\Menus\CommandsFromFileMenu.cpp.obj
+TA_19.exe: CMakeFiles\TA_19.dir\Model\DoubleMajorStudent.cpp.obj
 TA_19.exe: CMakeFiles\TA_19.dir\build.make
 TA_19.exe: CMakeFiles\TA_19.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\University and Project and Stuff\AP\EducationSystem\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable TA_19.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\University and Project and Stuff\AP\EducationSystem\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable TA_19.exe"
 	"C:\Program Files\JetBrains\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\TA_19.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100177~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100177~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\ENTERP~1\VC\Tools\MSVC\1420~1.275\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\TA_19.dir\objects1.rsp @<<
  /out:TA_19.exe /implib:TA_19.lib /pdb:"D:\University and Project and Stuff\AP\EducationSystem\cmake-build-debug\TA_19.pdb" /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
