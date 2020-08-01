@@ -12,8 +12,9 @@ void View::makeMenus( Menu* root ){
     auto studentMenu = new InternalMenu{"Student Menu", root};
     auto professorMenu = new InternalMenu{"Professor Menu", root};
     auto managerMenu = new InternalMenu{"Manager Menu", root};
+    auto mathClassMenu = new InternalMenu{"Math Class", root};
     root->setSubMenus(vector<Menu*>
-            {commandsFromFile, studentMenu, professorMenu, managerMenu});
+            {commandsFromFile, studentMenu, professorMenu, managerMenu, mathClassMenu});
 
     // make Student Menu
     auto showThisSemesterCourses = new LeafMenu{"Show This Semester Courses", studentMenu};
@@ -52,7 +53,10 @@ void View::makeMenus( Menu* root ){
     auto showAllCourses = new LeafMenu{"Show All Courses", coursesMenu};
     coursesMenu->setSubMenus(vector<Menu*>
             {addCourses, managerShowThisSemesterCourses, showAllCourses});
-
+    //make Math Class Menu
+    auto mathClassReadMembersFromFile = new LeafMenu{"Read Members From File",mathClassMenu};
+    auto mathClassCalculateTotalSalary = new LeafMenu{"Calculate Total Salary",mathClassMenu};
+    mathClassMenu->setSubMenus(vector<Menu*>{mathClassReadMembersFromFile,mathClassCalculateTotalSalary});
 }
 
 void View::exec(){

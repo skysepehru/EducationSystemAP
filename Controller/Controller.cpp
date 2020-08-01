@@ -94,6 +94,31 @@ void Controller:: addCourse(std::string courseName, std::string profLast, std::s
     }
 
 }
+void Controller::addMathClassStudent(std::string studentName, std::string lastName, std::string studentID, double workHours , bool isDoubleMajor) {
+    Student* student;
+    if(isDoubleMajor)
+        student= new DoubleMajorStudent (studentID,studentName,lastName,workHours,
+                                         vector<string>{},map<string,double>{},"Chemistry");
+    else
+        student = new Student(studentID,studentName,lastName,workHours,
+                              vector<string>{},map<string,double>{});
+    mathClass.push_back(student);
+}
+
+void Controller::addMathClassProfessor(std::string name, std::string lastName, std::string ID, double workHours,
+                                       std::string title) {
+    Professor* prof = new Professor (ID, name, lastName, workHours, title);
+    mathClass.push_back(prof);
+}
+
+double Controller::calculateMathClassTotalSalary() {
+    double temp =0;
+    for(auto x : mathClass)
+    {
+        temp += x->calculateSalary();
+    }
+    return  temp;
+}
 
 bool Controller::inStudents(const std::string& ID) const{
     for( const auto& stu : students ){

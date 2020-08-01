@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-D:/University and Project and Stuff/AP/EducationSystem/Controller/Controller.cpp
-Controller.h
-D:/University and Project and Stuff/AP/EducationSystem/Controller/Controller.h
-fstream
--
-vector
--
-map
--
-
 D:/University and Project and Stuff/AP/EducationSystem/Controller/Controller.h
 string
 -
@@ -27,12 +17,18 @@ D:/University and Project and Stuff/AP/EducationSystem/Model/Student.h
 D:/University and Project and Stuff/AP/EducationSystem/Model/Professor.h
 ../Model/Course.h
 D:/University and Project and Stuff/AP/EducationSystem/Model/Course.h
+../Model/DoubleMajorStudent.h
+D:/University and Project and Stuff/AP/EducationSystem/Model/DoubleMajorStudent.h
 
 D:/University and Project and Stuff/AP/EducationSystem/Model/Course.h
 string
 -
 vector
 -
+
+D:/University and Project and Stuff/AP/EducationSystem/Model/DoubleMajorStudent.h
+Student.h
+D:/University and Project and Stuff/AP/EducationSystem/Model/Student.h
 
 D:/University and Project and Stuff/AP/EducationSystem/Model/Person.h
 string
@@ -46,16 +42,6 @@ iostream
 Person.h
 D:/University and Project and Stuff/AP/EducationSystem/Model/Person.h
 
-D:/University and Project and Stuff/AP/EducationSystem/Model/Student.cpp
-Student.h
-D:/University and Project and Stuff/AP/EducationSystem/Model/Student.h
-regex
--
-stdexcept
--
-sstream
--
-
 D:/University and Project and Stuff/AP/EducationSystem/Model/Student.h
 Person.h
 D:/University and Project and Stuff/AP/EducationSystem/Model/Person.h
@@ -68,9 +54,9 @@ vector
 map
 -
 
-D:/University and Project and Stuff/AP/EducationSystem/View/Menus/CommandsFromFileMenu.cpp
-CommandsFromFileMenu.h
-D:/University and Project and Stuff/AP/EducationSystem/View/Menus/CommandsFromFileMenu.h
+D:/University and Project and Stuff/AP/EducationSystem/View/Menus/LeafMenu.cpp
+LeafMenu.h
+D:/University and Project and Stuff/AP/EducationSystem/View/Menus/LeafMenu.h
 iostream
 -
 fstream
@@ -79,42 +65,12 @@ sstream
 -
 iterator
 -
-stdexcept
+iomanip
 -
-
-D:/University and Project and Stuff/AP/EducationSystem/View/Menus/CommandsFromFileMenu.h
-string
--
-Menu.h
-D:/University and Project and Stuff/AP/EducationSystem/View/Menus/Menu.h
-../../Controller/Controller.h
-D:/University and Project and Stuff/AP/EducationSystem/Controller/Controller.h
-
-D:/University and Project and Stuff/AP/EducationSystem/View/Menus/InternalMenu.cpp
-iostream
--
-stdexcept
--
-InternalMenu.h
-D:/University and Project and Stuff/AP/EducationSystem/View/Menus/InternalMenu.h
-
-D:/University and Project and Stuff/AP/EducationSystem/View/Menus/InternalMenu.h
-string
--
-Menu.h
-D:/University and Project and Stuff/AP/EducationSystem/View/Menus/Menu.h
-
-D:/University and Project and Stuff/AP/EducationSystem/View/Menus/LeafMenu.cpp
-LeafMenu.h
-D:/University and Project and Stuff/AP/EducationSystem/View/Menus/LeafMenu.h
 
 D:/University and Project and Stuff/AP/EducationSystem/View/Menus/LeafMenu.h
 string
 -
-Menu.h
-D:/University and Project and Stuff/AP/EducationSystem/View/Menus/Menu.h
-
-D:/University and Project and Stuff/AP/EducationSystem/View/Menus/Menu.cpp
 Menu.h
 D:/University and Project and Stuff/AP/EducationSystem/View/Menus/Menu.h
 
@@ -125,24 +81,4 @@ vector
 -
 ../../Controller/Controller.h
 D:/University and Project and Stuff/AP/EducationSystem/Controller/Controller.h
-
-D:/University and Project and Stuff/AP/EducationSystem/View/View.cpp
-stdexcept
--
-View.h
-D:/University and Project and Stuff/AP/EducationSystem/View/View.h
-
-D:/University and Project and Stuff/AP/EducationSystem/View/View.h
-../Controller/Controller.h
-D:/University and Project and Stuff/AP/EducationSystem/Controller/Controller.h
-Menus/InternalMenu.h
-D:/University and Project and Stuff/AP/EducationSystem/View/Menus/InternalMenu.h
-Menus/CommandsFromFileMenu.h
-D:/University and Project and Stuff/AP/EducationSystem/View/Menus/CommandsFromFileMenu.h
-Menus/LeafMenu.h
-D:/University and Project and Stuff/AP/EducationSystem/View/Menus/LeafMenu.h
-
-D:/University and Project and Stuff/AP/EducationSystem/main.cpp
-View/View.h
-D:/University and Project and Stuff/AP/EducationSystem/View/View.h
 

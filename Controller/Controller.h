@@ -6,6 +6,7 @@
 #include "../Model/Student.h"
 #include "../Model/Professor.h"
 #include "../Model/Course.h"
+#include "../Model/DoubleMajorStudent.h"
 
 class Controller {
     friend class Menu;
@@ -17,6 +18,7 @@ private:
     std::vector<Professor> professors;
     std::vector<Course> courses;
     std::vector<Course> currentSemesterCourses;
+    std::vector<Person*> mathClass;
     Controller() = default;
 
 public:
@@ -28,6 +30,9 @@ public:
     void addProfessor(std::string ID, std::string first, std::string last, std::string title);
     void addCourse(std::string courseName, std::string profLast, std::string semester,
             std::vector<std::string> pre);
+    void addMathClassStudent(std::string studentName , std::string lastName , std::string studentID , double workHours , bool isDoubleMajor);
+    void addMathClassProfessor(std::string name , std::string lastName , std::string ID , double workHours , std::string title);
+    double calculateMathClassTotalSalary();
     void takeCourse(const std::string& studentID, const std::string& courseName);
     void dropCourse(const std::string& studentID, const std::string& courseName);
     Student& findStudent(std::string ID);

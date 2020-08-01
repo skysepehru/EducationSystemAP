@@ -1,4 +1,9 @@
 #include "LeafMenu.h"
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <iterator>
+#include <iomanip>
 
 using namespace std;
 
@@ -128,7 +133,30 @@ void LeafMenu::run() {
 
     }
 
+    else if(name == "Read Members From File"){
+        string command;
+        char * cmd = new char[1000];
+        ifstream input("members.txt");
+        while(! input.eof()) {
+            input.getline(cmd, 1000);
+            command = (string) cmd;
+            istringstream iss{command};
+            vector<string> results{istream_iterator<string>{iss}, istream_iterator<string>()};
+
+            if(results[0] == "P")
+                controller.addMathClassProfessor(results[2],results[3],results[1],stod(results[5]),results[4]);
+             else if(results[0] == "S")
+                controller.addMathClassStudent(results[2],results[3],results[1],stod(results[4]), false);
+            else if(results[0] == "D")
+                controller.addMathClassStudent(results[2],results[3],results[1],stod(results[4]), true);
+        }
+    }
+    else if(name == "Calculate Total Salary")
+    {
+        cout<<"Total Math Class Salary is "<< setprecision(2)<< fixed<<controller.calculateMathClassTotalSalary()<<endl;
+    }
+
     else{
-        throw invalid_argument("This Menu hase not been defined!!");
+        throw invalid_argument("This Menu has not been defined!!");
     }
 }
