@@ -176,10 +176,10 @@ void Controller:: takeCourse(const std::string& studentID, const std::string& co
 }
 void Controller:: dropCourse(const std::string &studentID, const std::string &courseName) {
     if(inCourses(courseName)){
-        std::map<std::string,double>::iterator it;
-        Student student = findStudent(studentID);
-        it = student.currentSemesterCourses.find(courseName);
-        student.currentSemesterCourses.erase(it);
+        //std::map<std::string,double>::iterator it;
+        //Student student = findStudent(studentID);
+        //it = student.currentSemesterCourses.find(courseName);
+        findStudent(studentID).currentSemesterCourses.erase(courseName);
     }
     else
     {
